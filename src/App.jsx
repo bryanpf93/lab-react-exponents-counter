@@ -24,9 +24,21 @@ function App() {
       <h2><em>Exponents</em></h2>
 
       <div className="container">
+
+        {/** 1º solucion
+        <Exponent counter={count} power={2} />
+        <Exponent counter={count} power={3} />
+        <Exponent counter={count} power={4} />
+        <Exponent counter={count} power={5} />
+        <Exponent counter={count} power={6} />
+         */} 
+
+        {/** 2º Solucion */}
         {[2, 3, 4, 5, 6].map((power) => (
           <Exponent key={power} counter={count} power={power} />
         ))}
+
+
       </div>
     </div>
   );
